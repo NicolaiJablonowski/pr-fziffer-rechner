@@ -1,0 +1,60 @@
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Kontrollstrukturen</title>
+		
+		<script>
+			"use strict";
+
+			// Programmiere hier calc
+			function clicked() {
+                var Vbar1 = document.getElementById("idZahl1").value;
+                var Vbar2=  document.getElementById("idZahl2").value;
+                var Vbar3=  document.getElementById("idZahl3").value;
+                var Vbar4=  document.getElementById("idZahl4").value;
+                var Vbar5=  document.getElementById("idZahl5").value;
+                var Vbar6=  document.getElementById("idZahl6").value;
+                var Vbar7=  document.getElementById("idZahl7").value;
+                var Vbar8=  document.getElementById("idZahl8").value;
+                var Vbar9=  document.getElementById("idZahl9").value;
+                var Vbar10=  document.getElementById("idZahl10").value;
+                var Vbar11=  document.getElementById("idZahl11").value;
+                var Vbar12=  document.getElementById("idZahl12").value;
+
+                var vAusgabe 
+                var vErgebnis
+                var vSumme
+
+                vSumme=Vbar1*1+Vbar2*3+Vbar3*1+Vbar4*3+Vbar5*1+Vbar6*3+Vbar7*1+Vbar8*3+Vbar9*1+Vbar10*3+Vbar11*1+Vbar12*3			
+
+                if (vSumme%10==0) { vErgebnis=0
+
+                } else {vErgebnis=vSumme%10}
+
+                vAusgabe= "Die Prüf nummer von der Artikelnummer   " +Vbar1 +Vbar2 +Vbar3 +Vbar4 +Vbar5 +Vbar6 +Vbar7 +Vbar8 +Vbar9 +Vbar10 + Vbar11 +Vbar12 +"   ist " + vErgebnis
+
+                document.getElementById("idOutput").innerHTML = vAusgabe;
+
+			}
+
+		</script>
+	
+
+	<body>
+		<h1>Kontrollstrukturen</h1>
+		Eingabe: <input id="idZahl1" type="text" size="1"value="1" maxlength="1">
+        <input id="idZahl2" type="text" size="1"value="1"maxlength="1">
+        <input id="idZahl3"type="text" size="1" value="1"maxlength="1">
+        <input id="idZahl4" type="text" size="1"value="1"maxlength="1">
+        <input id="idZahl5" type="text" size="1"value="1"maxlength="1">
+        <input id="idZahl6" type="text" size="1"value="1"maxlength="1">
+        <input id="idZahl7" type="text"size="1" value="1"maxlength="1">
+        <input id="idZahl8" type="text"size="1" value="1"maxlength="1">
+        <input id="idZahl9" type="text"size="1" value="1"maxlength="1">
+        <input id="idZahl10"type="text" size="1"value="1"maxlength="1">
+        <input id="idZahl11"type="text"size="1" value="1"maxlength="1">
+        <input id="idZahl12"type="text"size="1" value="1"maxlength="1">
+		<button onclick="clicked();">Berechne!</button><br><br>
+		<div id="idOutput">Hier kommen die Zahlen</div>
+	
+</body></html>
